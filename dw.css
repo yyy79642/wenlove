@@ -1,54 +1,108 @@
 body {
-    background-color: #fff0f5;
-    font-family: 'Arial', sans-serif;
+    background-color: #f1d5da; /* 浅粉色 */
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
 }
 
 .container {
-    text-align: center;
+    width: 90%; /* 适应手机屏幕宽度 */
+    max-width: 500px; /* 最大宽度限制 */
 }
 
 #mainImage {
-    width: 300px;
-    height: auto;
-    margin-bottom: 20px;
+    width: 100%; /* 图片宽度自适应容器 */
+    max-width: 200px; /* 最大宽度限制 */
+    transition: all 0.3s ease;
 }
 
-#question {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #d63384;
-}
-
-.buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+h1 {
+    font-size: 5vw; /* 字体大小根据视口宽度变化 */
+    color: #68495b;
+    margin: 20px 0; /* 增加上下间距 */
 }
 
 button {
+    font-size: 4vw; /* 字体大小根据视口宽度变化 */
     padding: 10px 20px;
-    font-size: 18px;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: all 0.3s;
+    margin: 10px;
+    transition: all 0.3s ease;
 }
 
 #yes {
-    background-color: #ff69b4;
+    background-color: #d4818e; /* 粉色 */
     color: white;
 }
 
 #no {
-    background-color: #cccccc;
-    color: black;
+    background-color: #6784b1; /* 蓝色 */
+    color: white;
+    position: relative;
 }
 
-button:hover {
-    transform: scale(1.1);
+.yes-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffdae0; /* 粉色 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.yes-text {
+    font-size: 7vw; /* 字体大小根据视口宽度变化 */
+}
+
+.yes-image {
+    width: 50%; /* 图片宽度自适应容器 */
+    max-width: 300px; /* 最大宽度限制 */
+}
+
+/* 电脑端样式优化 */
+@media (min-width: 768px) {
+    body {
+        display: block;
+    }
+
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+        max-width: none;
+    }
+
+    #mainImage {
+        width: 200px; /* 固定图片宽度 */
+    }
+
+    h1 {
+        font-size: 28px; /* 固定字体大小 */
+        margin: 20px 0;
+    }
+
+    button {
+        font-size: 18px; /* 固定字体大小 */
+    }
+
+    .yes-text {
+        font-size: 36px; /* 固定字体大小 */
+    }
+
+    .yes-image {
+        width: 300px; /* 固定图片宽度 */
+    }
 }
