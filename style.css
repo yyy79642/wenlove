@@ -9,26 +9,6 @@ body {
     align-items: center;
     height: 100vh;
 }
-#playMusicBtn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 12px 20px;
-  background-color: #ff69b4;
-  color: white;
-  font-size: 16px;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: all 0.3s;
-  z-index: 999;
-}
-
-#playMusicBtn:hover {
-  transform: scale(1.05);
-}
-
 
 .container {
     width: 90%; /* 适应手机屏幕宽度 */
