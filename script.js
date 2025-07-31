@@ -37,10 +37,10 @@ noButton.addEventListener("click", function() {
     }
 
     // 图片变化（前 5 次变化）
-    if (clickCount === 1) mainImage.src = "https://s21.ax1x.com/2025/02/28/pE8U7Px.png"; // 震惊
-    if (clickCount === 2) mainImage.src = "https://s21.ax1x.com/2025/02/28/pE8UXse.png";   // 思考
-    if (clickCount === 3) mainImage.src = "https://s21.ax1x.com/2025/02/28/pE8UqxO.png";   // 生气
-    if (clickCount >= 4) mainImage.src = "https://s21.ax1x.com/2025/02/28/pE8UOMD.png";  // 之后一直是哭
+    if (clickCount === 1) mainImage.src = "pE8U7Px.png"; // 震惊
+    if (clickCount === 2) mainImage.src = "pE8UXse.png";   // 思考
+    if (clickCount === 3) mainImage.src = "pE8UqxO.png";   // 生气
+    if (clickCount >= 4) mainImage.src = "pE8UOMD.png";  // 之后一直是哭
 
 });
 
@@ -49,7 +49,7 @@ yesButton.addEventListener("click", function() {
     document.body.innerHTML = `
         <div class="yes-screen">
             <h1 class="yes-text">汪汪汪!!!雯宝你好呀，我是最爱你的云宝!!! ( >᎑<)♡︎ᐝ</h1>
-            <img src="https://s21.ax1x.com/2025/02/28/pE8UbRK.png" alt="拥抱" class="yes-image">
+            <img src="pE8UbRK.png" alt="拥抱" class="yes-image">
         </div>
     `;
 
