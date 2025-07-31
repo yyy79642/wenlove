@@ -14,17 +14,6 @@ const noTexts = [
     "不行:("
 ];
 
-document.getElementById("playMusicBtn").addEventListener("click", function () {
-    const audio = document.getElementById("bgm");
-    audio.play().then(() => {
-        console.log("音乐播放成功");
-        this.style.display = "none"; // 播放后隐藏按钮
-    }).catch((err) => {
-        console.log("播放失败，原因：" + err);
-        alert("无法自动播放，请确认浏览器允许播放音频");
-    });
-});
-
 
 // No 按钮点击事件
 noButton.addEventListener("click", function() {
